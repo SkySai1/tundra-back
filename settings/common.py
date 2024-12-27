@@ -563,7 +563,7 @@ THUMBNAIL_ALIASES = {
 
 # Feedback module settings
 FEEDBACK_ENABLED = True
-FEEDBACK_EMAIL = "support@taiga.io"
+FEEDBACK_EMAIL = os.getenv("FEEDBACK_EMAIL", "support@example.com")
 
 # Stats module settings
 STATS_ENABLED = False
